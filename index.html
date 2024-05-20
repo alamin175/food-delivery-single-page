@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Food Delivery</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<section>
+			<div class="flex justify-between items-center m-8 mx-16">
+				<img src="/images/pizza.png" alt="Pizza" />
+				<ul class="flex gap-4 font-medium">
+					<li><a href="#">Restaurants</a></li>
+					<li><a href="#">Recipes</a></li>
+					<li><a href="#">About</a></li>
+					<li class=""><a href="#">Page</a></li>
+				</ul>
+				<div>
+					<button class="font-bold mr-2">Login</button>
+					<button class="rounded-3xl text-white bg-[#E94339] p-2 w-24">
+						Sign up
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Banner -->
+		<section>
+			<div class="flex m-16 items-center">
+				<div>
+					<h1 class="text-5xl font-bold mb-4">
+						Your Favorite Food Delivery Partner
+					</h1>
+					<p class="font-md">
+						The food at your doorstep. Why starve when you have us. You
+						hunger partner. Straight out of the oven to your doorstep.
+					</p>
+					<input
+						class="bg-gray-200 p-2 my-6 rounded-3xl placeholder:text-[10px] w-1/3"
+						type="text"
+						placeholder="Enter Your Delivery Location"
+					/>
+					<button
+						class="rounded-3xl text-white bg-[#FF5331] p-2 w-24 text-xs -ml-5"
+					>
+						Order Now
+					</button>
+
+					<!-- Download option -->
+					<div class="flex gap-8">
+						<a href="#">
+							<div
+								class="flex items-center gap-2 bg-gray-100 w-fit p-2 rounded-lg"
+							>
+								<i class="fa-brands fa-apple text-3xl"></i>
+
+								<p class="text-[10px] leading-none flex flex-col">
+									<span> Download on the </span>
+
+									<span class="text-lg font-bold">App Store</span>
+								</p>
+							</div> </a
+						><a href="#">
+							<div
+								class="flex items-center gap-2 bg-gray-100 w-fit p-2 rounded-lg"
+							>
+								<img src="/images/Google Play logo.png" class="text-3xl"></img>
+
+								<p class="text-[10px] leading-none flex flex-col">
+									<span>GET IT ON </span>
+
+									<span class="text-lg font-bold">App Store</span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div>
+					<img
+						class="bg-[#F2EBDA] p-6 rounded-2xl"
+						src="/images/delivery.png"
+						alt="Delivery Boy"
+					/>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

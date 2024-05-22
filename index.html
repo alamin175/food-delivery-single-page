@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Food Delivery</title>
+		<link rel="icon" href="/images/delivery.png">
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -14,9 +15,11 @@
 	</head>
 	<body data-theme="light">
 
-		<!-- Header -->
+		<!------------- 
+			Header 
+		--------------->
 		<!-- Only this navbar is created from daisy ui in this webpage -->
-		<header class="navbar bg-base-100 p-10">
+		<header class="navbar bg-base-100 p-3 md:p-10">
   			<div class="navbar-start">
     			<div class="dropdown">
       			<div tabindex="0" role="button" class="btn btn-ghost md:hidden">
@@ -56,16 +59,18 @@
     			</ul>
   			</div>
  			<div class="navbar-end">
-					<button class="font-bold mr-2">Login</button>
+					<button class="font-bold mr-2 hover:text-orange-600">Login</button>
 					<button class="rounded-3xl text-white bg-[#E94339] p-2 w-24">
 						Sign up
 					</button>
 			</div>
 		</header>
 
-		<!-- Banner -->
+		<!--------------
+			 Banner 
+		---------------->
 		<section>
-			<div class="flex flex-col-reverse md:flex-row m-5 md:m-10 lg:m-16 lg:my-20 items-center justify-center">
+			<div class="flex flex-col-reverse md:flex-row m-5 md:m-10 lg:m-16 lg:my-20 items-center my-16 justify-center ">
 				<div>
 					<h1 class="text-3xl lg:text-5xl font-bold mb-4">
 						Your Favorite Food Delivery Partner
@@ -124,8 +129,10 @@
 			</div>
 		</section>
 
-		<!-- Food Dish Item -->
-		<section class="lg:h-screen w-11/12 md:w-10/12 mx-auto mt-16">
+		<!---------------------- 
+			Food Dish Item 
+		------------------------>
+		<section class="lg:h-screen w-11/12 md:w-10/12 mx-auto mt-28">
 			<div class="text-center ">
 
 				<h1 class="font-bold text-3xl md:text-4xl ">More Than <span class="text-[#FF5331]">10,000</span>  Dishes <br> To Order!</h1>
@@ -177,7 +184,9 @@
 				</div>
 		</section>
 
-		<!-- Order Process -->
+		<!--------------------
+			 Order Process 
+		---------------------->
 		<section>
 			<h1 class="text-center text-4xl font-medium mt-20">How To Order?</h1>
 			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto gap-20 w-10/12 my-20 mb-32">
@@ -220,7 +229,9 @@
 			</div>
 		</section>
 
-		<!-- Testimonials-->
+		<!------------------- 
+			Feedback
+		--------------------->
 		<section class="text-center m-3">
 			<h1 class="text-4xl font-bold mb-3">Our Clients Feedback</h1>
 			<p>The food at your doorstep. Why starve when you have us. You hunger <br>partner. Straight out of the oven to your doorstep.</p>
@@ -230,39 +241,43 @@
 				<p class="font-bold">Mithcell Marsh</p>
 				<p class="text-sm text-gray-500">CEO, Bexon Agency</p>
 				<div class="my-5 flex gap-4 justify-center">
-					<i class="fa-solid fa-arrow-left font-bold text-lg bg-gray-200 rounded-full p-2 px-4"></i>
-					<i class="fa-solid fa-arrow-right font-bold text-lg bg-[#FF5331] rounded-full p-2 px-4 text-white"></i>
+					<i class="fa-solid fa-arrow-left cursor-pointer font-bold text-lg bg-gray-200 rounded-full p-2 px-4"></i>
+					<i class="fa-solid fa-arrow-right font-bold text-lg bg-[#FF5331] rounded-full p-2 px-4 text-white cursor-pointer"></i>
 				</div>
 
 			</div>
 		</section>
 
-		<!-- Subscribe -->
-		<section class="mt-20 bg-[#FFEFEC] py-16 px-6 md:p-16">
+		<!-----------------
+			 Subscribe 
+		------------------->
+		<section class="mt-20 bg-[#FFEFEC] py-16 px-3 md:px-6 md:p-16">
 			<div class="flex justify-between">
 				<div>
-					<h1 class="font-bold text-3xl md:text-4xl mb-2">Subscribe our newsletter</h1>
-					<p class="text-sm">Browse local restaurants and businesses for delivery by entering your address blow</p>
+					<h1 class="font-bold text-2xl md:text-4xl mb-2">Subscribe our newsletter</h1>
+					<p class="text-xs md:text-sm">Browse local restaurants and businesses for delivery by entering your address blow</p>
 				</div>
 				<div class="relative flex items-center">
-   					 <input type="text" placeholder="Enter your email address"  class="rounded-full py-2 pl-8 md:pr-12 placeholder:text-[10px]">
+   					 <input type="text" placeholder="Enter your email address"  class="rounded-full py-2 pl-3 md:pl-8 md:pr-12 placeholder:text-[10px]">
    					 <button class="absolute right-1 bg-[#FF5331] text-white p-1 px-3 rounded-full">Send</button>
 				</div>
 
 			</div>
 		</section>
 
-		<!-- Footer -->
+		<!-------------- 
+			 Footer 
+		---------------->
 		<footer class="bg-black p-10">
-			<div class="flex flex-col-reverse lg:flex-row gap-16 my-10 mb-32">
+			<div class="flex flex-col-reverse lg:flex-row gap-16 lg:my-10 md:mb-12 lg:mb-32">
 				<div class="col-span-5 lg:w-1/2 mr-6">
 					<img src="/images/pizza.png" alt="">
 					
 					<!-- Download Button -->
-					<div class="flex gap-8 mt-16">
+					<div class="flex gap-4 mt-8 lg:mt-16">
 						<a href="#">
 							<div
-								class="flex items-center gap-2 bg-gray-100 w-fit p-2 rounded-lg"
+								class="flex items-center gap-2 bg-gray-100 w-36 p-2 rounded-lg "
 							>
 								<i class="fa-brands fa-apple text-3xl"></i>
 
@@ -274,7 +289,7 @@
 							</div> </a
 						><a href="#">
 							<div
-								class="flex items-center gap-2 bg-gray-100 w-fit p-2 rounded-lg"
+								class="flex items-center gap-2 bg-gray-100 w-36 p-2 rounded-lg"
 							>
 								<img src="/images/Google Play logo.png" class="text-3xl"></img>
 
@@ -293,11 +308,11 @@
 					<div>
 						<p class="font-bold text-white">Quick Links</p>
 						<ul class="flex flex-col gap-2 mt-4">
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Food Menu</a></li>
-							<li><a href="#">Offer</a></li>
-							<li><a href="#">Review</a></li>
-							<li><a href="#">Rider</a></li>
+							<li class="hover:underline"><a href="#">Features</a></li>
+							<li class="hover:underline"><a href="#">Food Menu</a></li>
+							<li class="hover:underline"><a href="#">Offer</a></li>
+							<li class="hover:underline"><a href="#">Review</a></li>
+							<li class="hover:underline"><a href="#">Rider</a></li>
 						</ul>
 					</div>
 
@@ -305,11 +320,11 @@
 					<div>
 						<p class="font-bold text-white">Get to Know Us</p>
 						<ul class="flex flex-col gap-2 mt-4 text-sm">
-							<li><a href="#">Gift Cards</a></li>
-							<li><a href="#">DoorDash Stories</a></li>
-							<li><a href="#">Linkedin</a></li>
-							<li><a href="#">Glassdoor</a></li>
-							<li><a href="#">Accessibility</a></li>
+							<li class="hover:underline"><a href="#">Gift Cards</a></li>
+							<li class="hover:underline"><a href="#">DoorDash Stories</a></li>
+							<li class="hover:underline"><a href="#">Linkedin</a></li>
+							<li class="hover:underline"><a href="#">Glassdoor</a></li>
+							<li class="hover:underline"><a href="#">Accessibility</a></li>
 						</ul>
 					</div>
 
@@ -317,11 +332,11 @@
 					<div>
 						<p class="font-bold text-white">News</p>
 						<ul class="flex flex-col gap-2 mt-4">
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Lift Media</a></li>
-							<li><a href="#">Press</a></li>
-							<li><a href="#">Presse Kit</a></li>
+							<li class="hover:underline"><a href="#">Blog</a></li>
+							<li class="hover:underline"><a href="#">FAQ</a></li>
+							<li class="hover:underline"><a href="#">Lift Media</a></li>
+							<li class="hover:underline"><a href="#">Press</a></li>
+							<li class="hover:underline"><a href="#">Presse Kit</a></li>
 						</ul>
 					</div>
 
@@ -329,19 +344,19 @@
 					<div>
 						<p class="font-bold text-white">Contact</p>
 						<ul class="flex flex-col gap-2 mt-4">
-							<li><a href="#">WhatsApp</a></li>
-							<li><a href="#">Support 24</a></li>
+							<li class="hover:underline"><a href="#">WhatsApp</a></li>
+							<li class="hover:underline"><a href="#">Support 24</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="text-gray-400 my-12 flex flex-col-reverse md:flex-row justify-between">
+			<div class="text-gray-400 my-6 lg:my-12 flex flex-col-reverse md:flex-row justify-between">
 				<p>@2024 pizza. All right reserved by Md. Alamin</p>
 				<div class="flex gap-8 mb-4 md:mb-0">
-					<a href="#"> Privacy</a>
-					<a href="#"> Policy</a>
-					<a href="#"> Teams</a>
-					<a href="#"> Service</a>
+					<a class="hover:underline" href="#"> Privacy</a>
+					<a class="hover:underline" href="#"> Policy</a>
+					<a class="hover:underline" href="#"> Teams</a>
+					<a class="hover:underline" href="#"> Service</a>
 				</div>
 			</div>
 		</footer>
